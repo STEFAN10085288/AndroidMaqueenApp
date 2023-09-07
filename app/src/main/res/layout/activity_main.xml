@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <Button
+        android:id="@+id/btnForward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forward"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:id="@+id/btnBackward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Backward"
+        android:textColor="@color/black"
+        android:layout_below="@+id/btnForward"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:id="@+id/btnLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left"
+        android:textColor="@color/black"
+        android:layout_toLeftOf="@+id/btnStop"
+        android:layout_alignTop="@+id/btnStop"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/btnStop"
+        android:layout_alignTop="@+id/btnStop"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="#FF0000"/>
+
+
+    <Button
+        android:layout_below="@+id/btnBackward"
+        android:id="@+id/btnPlayMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play music"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:layout_below="@+id/btnPlayMusic"
+        android:id="@+id/btnAutoPilot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auto pilot"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"/>
+
+
+
+    <TextView
+        android:id="@+id/displayArea"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/btnBackward"
+        android:layout_marginTop="100dp"
+        android:gravity="center"/>
+</RelativeLayout>
